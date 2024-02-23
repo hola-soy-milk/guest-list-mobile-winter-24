@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "guest-list-mobile",
+    "name": "Guest List",
     "slug": "guest-list-mobile",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -9,11 +9,9 @@
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#f0e5cf"
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true
     },
@@ -23,8 +21,11 @@
         "backgroundColor": "#ffffff"
       }
     },
+    "scheme": "guest-list-mobile",
     "web": {
-      "favicon": "./assets/favicon.png"
-    }
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": ["expo-font", "expo-router"]
   }
 }
